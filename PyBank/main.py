@@ -20,7 +20,7 @@ with open(path, "r") as file:
         total = row["Profit/Losses"]
         
 print(f"Total Months: {lines}")
-print(f"Total: {total}")
+print(f"Total: ${total}")
       
     
 # with open(OUT_PATH, "w+") as file:
