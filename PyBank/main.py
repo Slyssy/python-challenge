@@ -17,7 +17,7 @@ with open(path, "r") as file:
     
     for row in data:
         row = dict (row)
-        total = row["Profit/Losses"]
+        net_total = row["Profit/Losses"]
         
 print(f"Total Months: {lines}")
 print(f"Total: ${total}")
@@ -28,7 +28,10 @@ print(f"Total: ${total}")
 #     csv_writer = csv.DictWriter(file, 
 #                                 [
 #                                     "Date",
-#                                     "Profit/Losses"
-                                    
+#                                     "Profit/Losses",
+#                                     "Monthly_Perc_Change"
 #                                 ])
+#     for row in data:
+#         row = dict (row)
+        
     
