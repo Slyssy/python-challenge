@@ -17,11 +17,14 @@ with open(path, "r") as file:
     
     for row in data:
         row = dict (row)
-        net_total = row["Profit/Losses"]
+        total = row["Profit/Losses"]
+        avg_change = int(total)/int(lines)
         
 print(f"Total Months: {lines}")
 print(f"Total: ${total}")
-      
+print("Average Change: $", round(avg_change,2))
+
+       
     
 # with open(OUT_PATH, "w+") as file:
     
@@ -31,7 +34,17 @@ print(f"Total: ${total}")
 #                                     "Profit/Losses",
 #                                     "Monthly_Perc_Change"
 #                                 ])
+    
+#     def PercentChange(startpoint,currentpoint):
+#         return (float(currentpoint - startpoint)/abs(startpoint)) * 100
+    
+    
 #     for row in data:
+        
 #         row = dict (row)
+                       
+#         row["Monthly_Perc_Change"] = PercentChange("Profit/Losses"[0],row)
+        
+#         csv_writer.writerow(row)
         
     
