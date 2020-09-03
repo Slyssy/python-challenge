@@ -46,14 +46,17 @@ with open(path, "r") as file:
     
 
 with open("./analysis/output.txt", "w+") as file:
+    file.write("Financial Analysis\n")
+    file.write("______________________________\n")
     file.write(f"Total Months: {lines}\n")
     file.write(f"Total: ${sum_change}\n")
     file.write(f"Average Change: ${round(avg_change,2)}\n")
     file.write(f"Greatest Increase in Profits: {max_profit_date} (${max_profit})\n")
-    file.write(f"Greatest Decrease in Profits: {max_loss_date} (${max_loss})\n")
+    file.write(f"Greatest Decrease in Profits: {max_loss_date} (${max_loss})")
 
                               
-                            
+print("Financial Analysis")
+print("______________________________")
 print(f"Total Months: {lines}")
 print(f"Total: ${sum_change}")
 print("Average Change: $", round(avg_change,2))
